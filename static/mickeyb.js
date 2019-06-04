@@ -114,7 +114,8 @@ const chordChart = [
       },
       {
         number: 11,
-        name: 'D13♭9',
+        name1: 'D13♭9',
+        name: 'D13b9',
         chord: [[1, 5, 4], [2, 2, 1], [3, 3, 2], [4, 2, 1], [5, 'x'], [6, 'x']],
         position: 7,
         positionText: 4
@@ -192,7 +193,8 @@ const chordChart = [
       },
       {
         number: 21,
-        name: 'G7♯5♭9',
+        name1: 'G7♯5♭9',
+        name: 'G7♯5b9',
         chord: [
           [1, 4, 3],
           [2, 4, 3],
