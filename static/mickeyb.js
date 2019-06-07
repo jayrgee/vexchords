@@ -194,64 +194,64 @@ const chordChart = [
         number: 21,
         name: 'G7♯5♭9',
         chord: [
-          [1, 4, 3],
-          [2, 4, 3],
-          [3, 4, 3],
-          [4, 3, 2],
+          [1, 3, 3],
+          [2, 3, 3],
+          [3, 3, 3],
+          [4, 2, 2],
           [5, 'x'],
-          [6, 3, 1]
+          [6, 2, 1]
         ],
-        position: 0,
-        numFrets: 6
+        position: 3,
+        positionText: 1
       },
       {
         number: 22,
         name: 'Cma9',
         chord: [
-          [1, 3, 3],
-          [2, 3, 3],
-          [3, 2, 1],
-          [4, 2, 1],
-          [5, 3, 2],
+          [1, 2, 3],
+          [2, 2, 3],
+          [3, 1, 1],
+          [4, 1, 1],
+          [5, 2, 2],
           [6, 'x']
         ],
-        position: 0,
-        numFrets: 6
+        position: 3,
+        positionText: 1
       },
       {
         number: 23,
         name: 'G13',
         chord: [
-          [1, 5, 4],
-          [2, 5, 4],
-          [3, 4, 3],
-          [4, 3, 2],
+          [1, 4, 4],
+          [2, 4, 4],
+          [3, 3, 3],
+          [4, 2, 2],
           [5, 'x'],
-          [6, 3, 1]
+          [6, 2, 1]
         ],
-        position: 0,
-        numFrets: 6
+        position: 3,
+        positionText: 1
       },
       {
         number: 24,
         name: 'G7♭5',
-        chord: [[1, 'x'], [2, 6, 4], [3, 4, 2], [4, 'x'], [5, 4, 1], [6, 'x']],
-        position: 0,
-        numFrets: 6
+        chord: [[1, 'x'], [2, 5, 4], [3, 3, 2], [4, 'x'], [5, 3, 1], [6, 'x']],
+        position: 4,
+        positionText: 2
       },
       {
         number: 25,
         name: 'G7',
-        chord: [[1, 'x'], [2, 3, 3], [3, 4, 3], [4, 3, 2], [5, 'x'], [6, 3, 1]],
-        position: 0,
-        numFrets: 6
+        chord: [[1, 'x'], [2, 2, 3], [3, 3, 3], [4, 2, 2], [5, 'x'], [6, 2, 1]],
+        position: 3,
+        positionText: 1
       },
       {
         number: 26,
         name: 'G♯dim',
-        chord: [[1, 'x'], [2, 3, 1], [3, 4, 3], [4, 3, 1], [5, 'x'], [6, 4, 2]],
-        position: 0,
-        numFrets: 6
+        chord: [[1, 'x'], [2, 2, 1], [3, 3, 3], [4, 2, 1], [5, 'x'], [6, 3, 2]],
+        position: 4,
+        positionText: 2
       }
     ]
   }
