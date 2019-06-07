@@ -268,15 +268,33 @@ function createChordElement(chordStruct) {
     .addClass('chordlabel')
     .append(chordStruct.number);
 
+  const position = chordStruct.position || 0;
+  const positionText = chordStruct.positionText || 0;
+  // eslint-disable-next-line no-nested-ternary
+  const offset = (positionText > 0)
+    ? position - positionText - 1
+    : position > 0 ? position - 1 : position;
+
+  const newChord = {
+    el: chordcanvas[0],
+    struct: chordStruct,
+    frets: chordStruct.chord
+      .map(x => x[1]) // assumes chord string order is 1,2,3,4,5,6
+      .reverse()
+      .map(x => ((x === 'x') ? x : x + offset))
+  };
+
+  chords.push(newChord);
+
+  const chordnotes = $('<p>')
+    .addClass('chordfrets')
+    .append(newChord.frets.toString());
+
   chordname.append(number);
   chordname.append(heading);
   chordbox.append(chordname);
   chordbox.append(chordcanvas);
-
-  chords.push({
-    el: chordcanvas[0],
-    struct: chordStruct
-  });
+  chordbox.append(chordnotes);
 
   return chordbox;
 }
